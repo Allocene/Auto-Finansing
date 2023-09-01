@@ -1,0 +1,37 @@
+.banner_section {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   background-color: #013d5b;
+   .banner_main {
+      & img {
+         width: 100%;
+         margin-top: 50px;
+         height: auto;
+      }
+   }
+   .text-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      .box-h1 {
+         font-size: 36px;
+         font-weight: bold;
+         padding-top: 50px;
+         text-align: center;
+         color: #fefefe;
+         overflow: auto;
+      }
+      .box-h2 {
+         font-size: 16px;
+         padding-bottom: 50px;
+         text-align: center;
+         color: #fefefe;
+         overflow: auto;
+      }
+   }
+}
