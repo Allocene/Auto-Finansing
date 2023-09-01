@@ -4,30 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const menu = document.querySelector(".header_menu");
   const body = document.querySelector("body");
 
-  burger.addEventListener("click", function(event) {
+  burger.addEventListener("click", function(e) {
     burger.classList.toggle("active");
     menu.classList.toggle("active");
     body.classList.toggle("lock");
   });
 });
-
-
-// //div class box
-// function showText(element) {
-//   const image = element.querySelector('img');
-//   const text = element.querySelector('.text');
-
-//   image.style.display = 'none';
-//   text.style.display = 'block';
-// }
-// function hideText(element) {
-//   const image = element.querySelector('img');
-//   const text = element.querySelector('.text');
-
-//   text.style.display = 'none';
-//   image.style.display = 'block';
-// }
-
 
 //open/close modal window
 const openModalBtns = document.getElementsByClassName('openModalBtn');
