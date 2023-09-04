@@ -17,16 +17,19 @@ const modalOverlay = document.querySelector('.modal-overlay');
 const submit = document.getElementById('submit');
 const successMessage = document.querySelector('.success-message');
 const failMessage = document.querySelector('.fail-message');
+const body = document.querySelector("body");
 
 for (let i = 0; i < openModalBtns.length; i++) {
     openModalBtns[i].addEventListener('click', function() {
-        modalOverlay.style.display = 'flex'; // Показать затемненный экран
+        modalOverlay.style.display = 'flex';
+        body.classList.toggle("lock");
     });
 }
 
 modalOverlay.addEventListener('click', function(click) {
     if (click.target === modalOverlay) {
-        modalOverlay.style.display = 'none'; // Скрыть затемненный экран при клике вне модального окна
+        modalOverlay.style.display = 'none';
+        body.classList.toggle("lock");
     }
 });
 
@@ -41,6 +44,7 @@ submit.addEventListener('click', function(event) {
      setTimeout(function() {
       modalOverlay.style.display = 'none';
       successMessage.style.display = 'none';
+      body.classList.toggle("lock");
     }, 2000)
   }
 
@@ -51,6 +55,7 @@ submit.addEventListener('click', function(event) {
     setTimeout(function() {
       modalOverlay.style.display = 'none';
       failMessage.style.display = 'none';
+      body.classList.toggle("lock");
     }, 2000)
   }
 });

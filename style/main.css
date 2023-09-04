@@ -1,0 +1,286 @@
+.openModalBtn {
+  border: none;
+  background-color: #0273ac;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease, outline-offset 0.5s ease;
+}
+.openModalBtn:hover {
+  background-color: #015782;
+  outline-offset: 5px;
+  outline: 3px solid #015782;
+}
+.openModalBtn p {
+  font-size: 24px;
+  color: #fefefe;
+}
+
+.first-section {
+  background-color: #fefefe;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-section .contain-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.first-section .contain-section .content-section {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  width: 100%;
+}
+.first-section .contain-section .content-section .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-section .contain-section .content-section .img img {
+  width: 100%;
+}
+.first-section .contain-section .content-section .text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.first-section .contain-section .content-section .text-section p, .first-section .contain-section .content-section .text-section button {
+  margin: 0;
+  text-align: right;
+}
+.first-section .contain-section .content-section .text-section .text-uppercase {
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+}
+.first-section .contain-section .content-section .text-section .text-heading {
+  padding: 16px 0;
+  font-size: 36px;
+  font-weight: lighter;
+}
+.first-section .contain-section .content-section .text-section .text-general {
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.first-section .contain-section .content-section .text-section .text-closure {
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.second-section {
+  background-color: #f4f4f4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-section .second-contain-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.second-section .second-contain-section .second-content-section {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+}
+.second-section .second-contain-section .second-content-section .second-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+.second-section .second-contain-section .second-content-section .second-text-section p, .second-section .second-contain-section .second-content-section .second-text-section button {
+  margin: 0;
+}
+.second-section .second-contain-section .second-content-section .second-text-section .second-text-uppercase {
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+.second-section .second-contain-section .second-content-section .second-text-section .second-text-heading {
+  padding: 16px 0;
+  font-size: 36px;
+}
+.second-section .second-contain-section .second-content-section .second-text-section .second-text-general {
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.second-section .second-contain-section .second-content-section .second-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-section .second-contain-section .second-content-section .second-img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .first-section {
+    background-color: #fefefe;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-section .contain-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .first-section .contain-section .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .first-section .contain-section .content-section .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-section .contain-section .content-section .img img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .first-section .contain-section .content-section .text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-section .contain-section .content-section .text-section p, .first-section .contain-section .content-section .text-section button {
+    margin: 0;
+  }
+  .first-section .contain-section .content-section .text-section .text-uppercase {
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+  }
+  .first-section .contain-section .content-section .text-section .text-heading {
+    padding: 16px 0;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .first-section .contain-section .content-section .text-section .text-general {
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+  }
+  .first-section .contain-section .content-section .text-section .text-closure {
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .second-section {
+    background-color: #f4f4f4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .second-section .second-contain-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .second-section .second-contain-section .second-content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .second-section .second-contain-section .second-content-section .second-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .second-section .second-contain-section .second-content-section .second-text-section p, .second-section .second-contain-section .second-content-section .second-text-section button {
+    margin: 0;
+  }
+  .second-section .second-contain-section .second-content-section .second-text-section .second-text-uppercase {
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  .second-section .second-contain-section .second-content-section .second-text-section .second-text-heading {
+    padding: 16px 0;
+    font-size: 36px;
+    text-align: center;
+  }
+  .second-section .second-contain-section .second-content-section .second-text-section .second-text-general {
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+  }
+  .second-section .second-contain-section .second-content-section .second-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .second-section .second-contain-section .second-content-section .second-img img {
+    width: 100%;
+  }
+
+  .openModalBtn {
+    border: none;
+    background-color: #0273ac;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, outline-offset 0.5s ease;
+  }
+  .openModalBtn:hover {
+    background-color: #015782;
+    outline-offset: 5px;
+    outline: 3px solid #015782;
+  }
+  .openModalBtn p {
+    font-size: 24px;
+    color: #fefefe;
+  }
+}

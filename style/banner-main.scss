@@ -17,7 +17,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 70%;
+      width: 80%;
       .box-h1 {
          font-size: 36px;
          font-weight: bold;
@@ -32,6 +32,46 @@
          text-align: center;
          color: #fefefe;
          overflow: auto;
+      }
+   }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+   .banner_section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      background-color: #013d5b;
+      .banner_main {
+         & img {
+            width: 100%;
+            margin-top: 50px;
+         }
+      }
+      .text-box {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         width: 80%;
+         margin: 0;
+         .box-h1 {
+            font-size: 26px;
+            font-weight: bold;
+            padding-top: 15px;
+            text-align: center;
+            color: #fefefe;
+         }
+         .box-h2 {
+            font-size: 16px;
+            padding-bottom: 15px;
+            text-align: center;
+            color: #fefefe;
+         }
       }
    }
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -6,14 +5,11 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Прозрачный черный цвет */
   display: none;
-  /* По умолчанию скрыт */
   justify-content: center;
   align-items: center;
 }
-
-.modal-content {
+.modal-overlay .modal-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -21,32 +17,10 @@
   align-items: center;
   justify-content: center;
 }
-
-.modal-content h2 {
+.modal-overlay .modal-content h2 {
   text-align: center;
 }
-
-button {
-  border: none;
-  background-color: #0273ac;
-  text-align: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.5s ease, outline-offset 0.5s ease;
-}
-
-button:hover {
-  background-color: #015782;
-  outline-offset: 5px;
-  outline: 3px solid #015782;
-}
-
-button p {
-  font-size: 24px;
-  color: #fefefe;
-}
-
-form {
+.modal-overlay form {
   background-color: white;
   border: 3px solid #f1f1f1;
   max-width: 500px;
@@ -55,8 +29,7 @@ form {
   padding: 20px;
   border-radius: 5px;
 }
-
-input[type=text], input[type=email], textarea {
+.modal-overlay form input[type=text], .modal-overlay form input[type=email], .modal-overlay form textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -65,33 +38,46 @@ input[type=text], input[type=email], textarea {
   border-radius: 5px;
   box-sizing: border-box;
 }
-
-.success-message {
+.modal-overlay form #submit {
+  border: none;
+  background-color: #0273ac;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease, outline-offset 0.5s ease;
+}
+.modal-overlay form #submit p {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fefefe;
+}
+.modal-overlay form #submit:hover {
+  background-color: #015782;
+  outline-offset: 5px;
+  outline: 3px solid #015782;
+}
+.modal-overlay .success-message {
   display: none;
   text-align: center;
   margin-top: 20px;
 }
-
-.success-message img {
+.modal-overlay .success-message img {
   width: 50px;
   height: 50px;
 }
-
-.success-message p {
+.modal-overlay .success-message p {
   margin-top: 10px;
 }
-
-.fail-message {
+.modal-overlay .fail-message {
   display: none;
   text-align: center;
   margin-top: 20px;
 }
-
-.fail-message img {
+.modal-overlay .fail-message img {
   width: 50px;
   height: 50px;
 }
-
-.fail-message p {
+.modal-overlay .fail-message p {
   margin-top: 10px;
 }
