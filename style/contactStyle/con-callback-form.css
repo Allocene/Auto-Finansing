@@ -1,0 +1,39 @@
+.callback_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.callback_form .container {
+  width: 80%;
+}
+.callback_form .container form {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+.callback_form .container form .label {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.callback_form .container form .inp {
+  width: 320px;
+}
+.callback_form .container form .sel {
+  width: 320px;
+}
+.callback_form .container form .col-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.callback_form .container form .col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

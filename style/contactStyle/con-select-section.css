@@ -1,0 +1,54 @@
+.select_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #013d5b;
+}
+.select_box .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-bottom: solid 2px white;
+}
+.select_box .container .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+.select_box .container .text p {
+  margin: 0;
+}
+.select_box .container .text .first {
+  font-size: 26px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.select_box .container .text .second {
+  font-size: 46px;
+  padding-bottom: 15px;
+}
+.select_box .container .select_box {
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+.select_box .container .select_box select[name="contact_select"] {
+  color: aliceblue;
+  font-size: 36px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px aliceblue;
+}
+.select_box .container .select_box select[name="contact_select"] option {
+  font-size: 26px;
+  background-color: aliceblue;
+  color: #333;
+}
+.select_box .container .select_box select[name="contact_select"] option:checked {
+  background-color: #013d5b;
+  color: aliceblue;
+}

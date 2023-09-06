@@ -1,8 +1,14 @@
+/*styles for index.html*/
 @import url('header.css');
 @import url('banner-main.css');
 @import url('main.css');
 @import url('modal-overlay.css');
 @import url('footer.css');
+
+/*styles for contact.html*/
+@import url('contactStyle/con-text-section.css');
+@import url('contactStyle/con-select-section.css');
+@import url('contactStyle/con-callback-form.css');
 
 body {
    font-family: 'Josefin Sans', sans-serif;

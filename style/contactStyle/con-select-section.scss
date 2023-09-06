@@ -1,0 +1,54 @@
+.select_box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   background-color: #013d5b;
+   .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      border-bottom: solid 2px white;
+      .text {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         color: aliceblue;
+         & p {
+            margin: 0;
+         }
+         & .first {
+            font-size: 26px;
+            padding-top: 60px;
+            padding-bottom: 50px;
+         }
+         & .second {
+            font-size: 46px;
+            padding-bottom: 15px;
+         }
+      }
+      .select_box {
+         padding-top: 15px;
+         padding-bottom: 60px;
+         select[name="contact_select"] {
+            color: aliceblue;
+            font-size: 36px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: solid 2px aliceblue;
+            & option {
+               font-size: 26px;
+               background-color: aliceblue;
+               color: #333;
+            }
+            & option:checked {
+               background-color: #013d5b;
+               color: aliceblue;
+            }
+         }
+      }
+   }
+}

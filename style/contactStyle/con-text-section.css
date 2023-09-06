@@ -1,0 +1,38 @@
+.text_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  width: 100%;
+  height: auto;
+}
+.text_section .text_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+.text_section .text_box .box_h1 {
+  padding-top: 72px;
+  padding-bottom: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+.text_section .text_box .box_h1 p {
+  margin: 0;
+}
+.text_section .text_box .box_h2 {
+  padding-bottom: 72px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+.text_section .text_box .box_h2 p {
+  margin: 0;
+}
