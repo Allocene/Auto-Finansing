@@ -10,6 +10,12 @@
 @import url('contactStyle/con-select-section.css');
 @import url('contactStyle/con-callback-form.css');
 
+/*styles for cooperation.htlm*/
+@import url('cooperationStyle/coop-style.css');
+
+/*styles for servant.html*/
+@import url('servantStyle/ser-style.css');
+
 body {
    font-family: 'Josefin Sans', sans-serif;
    font-family: 'Raleway', sans-serif;

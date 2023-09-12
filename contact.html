@@ -26,8 +26,8 @@
                   <nav class="header_menu">
                      <ul class="header_list">
                            <li><a href="index.html" class="header_link">Home</a></li>
-                           <li><a href="https://www.google.com.ua/" target="_blank" class="header_link">Servants</a></li>
-                           <li><a href="#" target="_blank" class="header_link">Cooperation</a></li>
+                           <li><a href="servant.html" class="header_link">Servants</a></li>
+                           <li><a href="cooperation.html" class="header_link">Cooperation</a></li>
                            <li><a href="contact.html" class="header_link">Contact Us</a></li>
                      </ul>
                   </nav>
@@ -51,7 +51,7 @@
                </div>
             </div>
 
-            <div class="select_box">
+            <div class="box">
                <div class="container">
                   <section id="contact">
                      <div class="text">
@@ -61,7 +61,7 @@
                      <div class="select_box">
                         <select name="contact_select" title="contact_select">
                            <option value="Commercial Financing">Commercial Financing</option>
-                           <option value="Multifamily Financing">Multifamily Financing</option>
+                           <option class="multifamily-financing" value="Multifamily Financing">Multifamily Financing</option>
                            <option value="Treasury Management">Treasury Management</option>
                            <option value="Corporate Card">Corporate Card</option>
                         </select>
@@ -71,60 +71,96 @@
             </div>
 
             <div class="callback_form">
-               <div class="container multifamily-financing">
+               <div class="container">
                   <form action="#" method="post">
                      <div class="col-1">
-                        <label class="label" for="first-name">First Name</label>
-                        <input class="inp" type="text" name="first-name">
-                        <label class="label" for="last-name">Last Name</label>
-                        <input class="inp" type="text" name="last-name">
-                        <label class="label" for="email">Business Email Address</label>
-                        <input class="inp" type="email" name="email">
-                        <label class="label" for="job">Job Title / Role</label>
-                        <input class="inp" type="text" name="job">
-                        <label class="label" for="company-name">Company Name (optional)</label>
-                        <input class="inp" type="text" name="company-name">
-                        <label class="label" for="number">Phone Number</label>
-                        <input class="inp" type="tel" name="number">
+                        <div class="item">
+                           <label class="label" for="first-name">First Name</label>
+                           <input class="inp" type="text" name="first-name">
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="last-name">Last Name</label>
+                           <input class="inp" type="text" name="last-name">
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="email">Business Email Address</label>
+                           <input class="inp" type="email" name="email">
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="job">Job Title / Role</label>
+                           <input class="inp" type="text" name="job">
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="company-name">Company Name (optional)</label>
+                           <input class="inp" type="text" name="company-name">
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="number">Phone Number</label>
+                           <input class="inp" type="tel" name="number">
+                        </div>
                      </div>
+                     
                      <div class="col-2">
-                        <label class="label" for="prop-adr">Property Address (optional)</label>
-                        <input class="inp" type="text" name="prop-adr">
-                        <label class="label" for="state">Property Location (state)</label>
-                        <input class="inp" type="state" name="state">
-                        <label class="label" for="property-type">Property Type</label>
-                        <select name="property-type" class="sel">
-                           <option hidden="" disabled="" selected="" value="" ></option>
-                           <option value="Affordable Housing" > Affordable Housing </option>
-                           <option value="Multifamily - Conventional"> Multifamily - Conventional </option>
-                           <option value="Manufactured Housing"> Manufactured Housing </option>
-                           <option value="Military Housing"> Military Housing </option>
-                           <option value="Student Housing"> Student Housing </option>
-                           <option value="Seniors Housing"> Seniors Housing </option>
-                        </select>
-                        <label class="label" for="financing-purpose">Financing Purpose (optional)</label>
-                        <select name="financing-purpose" class="sel">
-                           <option hidden="" disabled="" selected="" value="" ></option>
-                           <option value="Acquisition"> Acquisition </option>
-                           <option value="Assumption"> Assumption </option>
-                           <option value="Construction"> Construction </option>
-                           <option value="Lease-Up"> Lease-Up </option>
-                           <option value="Refinance"> Refinance </option>
-                           <option value="Supplemental"> Supplemental </option>
-                           <option value="Other"> Other </option>
-                        </select>
-                        <label class="label" for="req-loan">Requested Loan Amount</label>
-                        <select name="req-loan" class="sel">
-                           <option hidden="" disabled="" selected="" value="" ></option>
-                           <option value="LessThan1M"> Under $1 million </option>
-                           <option value="Between1And7.5M"> $1 million - $7.5 million </option>
-                           <option value="Between7.5And25M"> $7.5 million - $25 million </option>
-                           <option value="Between25And50M"> $25 million - $50 million </option>
-                           <option value="GreaterThan50M"> Over $50 million </option>
-                        </select>
-                        <label class="label" for="ad-detail">Additional Details We Should Know</label>
-                        <input class="inp" type="text" name="ad-detail">
+                        <div class="item">
+                           <label class="label" for="prop-adr">Property Address (optional)</label>
+                           <input class="inp" type="text" name="prop-adr">
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="state">Property Location (state)</label>
+                           <input class="inp" type="state" name="state">
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="property-type">Property Type</label>
+                           <select name="property-type" class="sel">
+                              <option hidden="" disabled="" selected="" value="" ></option>
+                              <option value="Affordable Housing" > Affordable Housing </option>
+                              <option value="Multifamily - Conventional"> Multifamily - Conventional </option>
+                              <option value="Manufactured Housing"> Manufactured Housing </option>
+                              <option value="Military Housing"> Military Housing </option>
+                              <option value="Student Housing"> Student Housing </option>
+                              <option value="Seniors Housing"> Seniors Housing </option>
+                           </select>
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="financing-purpose">Financing Purpose (optional)</label>
+                           <select name="financing-purpose" class="sel">
+                              <option hidden="" disabled="" selected="" value="" ></option>
+                              <option value="Acquisition"> Acquisition </option>
+                              <option value="Assumption"> Assumption </option>
+                              <option value="Construction"> Construction </option>
+                              <option value="Lease-Up"> Lease-Up </option>
+                              <option value="Refinance"> Refinance </option>
+                              <option value="Supplemental"> Supplemental </option>
+                              <option value="Other"> Other </option>
+                           </select>
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="req-loan">Requested Loan Amount</label>
+                           <select name="req-loan" class="sel">
+                              <option hidden="" disabled="" selected="" value="" ></option>
+                              <option value="LessThan1M"> Under $1 million </option>
+                              <option value="Between1And7.5M"> $1 million - $7.5 million </option>
+                              <option value="Between7.5And25M"> $7.5 million - $25 million </option>
+                              <option value="Between25And50M"> $25 million - $50 million </option>
+                              <option value="GreaterThan50M"> Over $50 million </option>
+                           </select>
+                        </div>
+
+                        <div class="item">
+                           <label class="label" for="ad-detail">Additional Details We Should Know</label>
+                           <input class="inp" type="text" name="ad-detail">
+                        </div>
                      </div>
+                     <button class="button" type="button"><p>Send</p></button>
                   </form>
                </div>
             </div>

@@ -5,7 +5,9 @@
   width: 100%;
 }
 .callback_form .container {
-  width: 80%;
+  width: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .callback_form .container form {
   display: grid;
@@ -16,14 +18,28 @@
 .callback_form .container form .label {
   font-size: 14px;
   font-weight: 300;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 .callback_form .container form .inp {
+  height: 36px;
   width: 320px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: solid 1px #013d5b;
+}
+.callback_form .container form .inp:focus {
+  background-color: #036da14d;
 }
 .callback_form .container form .sel {
-  width: 320px;
+  height: 40px;
+  width: 328px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: solid 1px #013d5b;
+}
+.callback_form .container form .sel:focus {
+  background-color: #036da14d;
 }
 .callback_form .container form .col-1 {
   display: flex;
@@ -31,9 +47,143 @@
   justify-content: center;
   flex-direction: column;
 }
+.callback_form .container form .col-1 .item {
+  height: 75px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.callback_form .container form .col-1 .item .label {
+  font-size: 14px;
+  font-weight: 600;
+}
 .callback_form .container form .col-2 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.callback_form .container form .col-2 .item {
+  height: 75px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.callback_form .container form .col-2 .item .label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.callback_form .container form .button {
+  width: 160px;
+  margin-top: 25px;
+  border: none;
+  background-color: #0273ac;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease, outline-offset 0.5s ease;
+}
+.callback_form .container form .button:hover {
+  background-color: #015782;
+  outline-offset: 5px;
+  outline: 3px solid #015782;
+}
+.callback_form .container form .button p {
+  font-size: 24px;
+  color: #fefefe;
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .callback_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .callback_form .container {
+    width: 50%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .callback_form .container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .callback_form .container form .label {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .callback_form .container form .inp {
+    height: 36px;
+    width: 320px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: solid 1px #013d5b;
+  }
+  .callback_form .container form .inp:focus {
+    background-color: #036da14d;
+  }
+  .callback_form .container form .sel {
+    height: 40px;
+    width: 328px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: solid 1px #013d5b;
+  }
+  .callback_form .container form .sel:focus {
+    background-color: #036da14d;
+  }
+  .callback_form .container form .col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .callback_form .container form .col-1 .item {
+    height: 75px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .callback_form .container form .col-1 .item .label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .callback_form .container form .col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .callback_form .container form .col-2 .item {
+    height: 75px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .callback_form .container form .col-2 .item .label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .callback_form .container form .button {
+    width: 160px;
+    margin-top: 25px;
+    border: none;
+    background-color: #0273ac;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, outline-offset 0.5s ease;
+  }
+  .callback_form .container form .button:hover {
+    background-color: #015782;
+    outline-offset: 5px;
+    outline: 3px solid #015782;
+  }
+  .callback_form .container form .button p {
+    font-size: 24px;
+    color: #fefefe;
+    margin: 0;
+  }
 }
