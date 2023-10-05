@@ -1,4 +1,4 @@
-//burger menu +++++
+//burger menu
 document.addEventListener("DOMContentLoaded", function() {
   const burger = document.querySelector(".header_burger");
   const menu = document.querySelector(".header_menu");
